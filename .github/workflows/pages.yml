@@ -11,29 +11,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v6
-      - name: Copy the existing app on the first run
-        if: ${{ hashFiles('package.json') == '' }}
-        env:
-          SOURCE_COMMIT: eab836166c66d738fa741d3a3e04d05183cfadb0
-        run: |
-          source_dir="$RUNNER_TEMP/ilm-qalb-amal-source"
-          git clone --depth 1 https://github.com/mdabashar/ilm-qalb-amal.git "$source_dir"
-          git -C "$source_dir" fetch --depth 1 origin "$SOURCE_COMMIT"
-          git -C "$source_dir" checkout --detach FETCH_HEAD
-          if [ -f README.md ]; then cp README.md README.initial.md; fi
-          for item in assets content data scripts package.json package-lock.json .gitignore README.md; do
-            cp -R "$source_dir/$item" .
-          done
-          sed -i 's|mdabashar.github.io|bashardatascience-hub.github.io|g; s|github.com/mdabashar/ilm-qalb-amal|github.com/bashardatascience-hub/ilm-qalb-amal|g' README.md scripts/build.mjs
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets content data scripts package.json package-lock.json .gitignore README.md README.initial.md
-          git commit -m 'Copy Ilm Qalb Amal app and manuscript lessons'
-          git push origin HEAD:main
       - uses: actions/setup-node@v4
         with:
           node-version: '24'

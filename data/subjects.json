@@ -1,0 +1,12 @@
+[
+  {"slug":"quran","group":"quran","bn":"কুরআন","en":"Quran","bnDescription":"আরবি পাঠ, অনুবাদ ও তিলাওয়াতের সঙ্গে পরিচয়।","enDescription":"Read, listen and explore the meaning of the Quran."},
+  {"slug":"tafsir","group":"quran","bn":"তাফসীর","en":"Tafsir","bnDescription":"সূত্রসহ ব্যাখ্যার আলোকে আয়াতের অর্থ বোঝা।","enDescription":"Understand verses through clearly attributed explanations."},
+  {"slug":"surah-studies","group":"quran","bn":"সূরার পথে","en":"Through the Surahs","bnDescription":"সূরার পরিচয়, মূল বিষয় ও ধারাবাহিক অধ্যয়ন।","enDescription":"Discover each surah through its themes and structure."},
+  {"slug":"self-reflection","group":"heart","bn":"কুরআনিক আত্মজিজ্ঞাসা","en":"Quranic reflection","bnDescription":"পড়া আয়াত নিয়ে ভাবা, প্রশ্ন করা ও অনুশীলন।","enDescription":"Make space for questions, reflection and everyday practice."},
+  {"slug":"prayer","group":"heart","bn":"অন্তর থেকে নামাজ","en":"Prayer from the heart","bnDescription":"নামাজের শব্দ, অর্থ ও হৃদয়ের সংযোগ।","enDescription":"Explore the words of prayer with attention and understanding."},
+  {"slug":"dua","group":"heart","bn":"দোয়া ও হৃদয়","en":"Dua and the heart","bnDescription":"দোয়ার অর্থ, প্রেক্ষাপট ও উপলব্ধি।","enDescription":"Reflect on the meaning and context of supplication."},
+  {"slug":"dhikr","group":"heart","bn":"জিকিরের পথে","en":"A journey through dhikr","bnDescription":"জিকিরের শব্দ, অর্থ ও দৈনন্দিন অনুশীলন।","enDescription":"Learn the words and meanings of remembrance."},
+  {"slug":"inner-struggle","group":"heart","bn":"অন্তরের যুদ্ধ","en":"The inner struggle","bnDescription":"আত্মশুদ্ধি ও নিজের অন্তরকে বোঝার পাঠ।","enDescription":"Reflect on inner growth and the work of self-improvement."},
+  {"slug":"grammar","group":"arabic","bn":"আরবি ব্যাকরণ","en":"Arabic grammar","bnDescription":"কুরআনের ভাষা বোঝার জন্য ধাপে ধাপে ব্যাকরণ।","enDescription":"Build a foundation in Arabic, one small step at a time."},
+  {"slug":"vocabulary","group":"arabic","bn":"কুরআনিক শব্দভান্ডার","en":"Quranic vocabulary","bnDescription":"আরবি শব্দ, মূল ধাতু ও অর্থের সঙ্গে পরিচয়।","enDescription":"Explore Arabic words, roots and meanings in context."}
+]

@@ -1,0 +1,14 @@
+{
+  "name": "ilm-qalb-amal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "yaml": "2.9.1",
+    "marked": "18.1.1"
+  }
+}

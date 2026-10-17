@@ -1,0 +1,221 @@
+{
+  "title": "অন্তর থেকে নামাজ পড়া",
+  "sourceSha256": "5f3e591817e48967185df253ad9f41369682c69244abc09cfd6bcffc0c020365",
+  "language": "bn",
+  "lessonCount": 18,
+  "missingNumbers": [
+    7,
+    11
+  ],
+  "chapters": [
+    {
+      "number": 0,
+      "slug": "introduction",
+      "title": "ভূমিকা — নামাজ বুঝে ও অন্তর দিয়ে পড়া",
+      "titleEn": "Introduction: understanding prayer with the heart",
+      "startParagraph": 1,
+      "endParagraphExclusive": 245,
+      "paragraphs": 244,
+      "tables": 1,
+      "characters": 8094
+    },
+    {
+      "number": 1,
+      "slug": "adhan",
+      "title": "আজান: আল্লাহ যখন আমাকে ডাকেন",
+      "titleEn": "Adhan: when Allah calls me",
+      "startParagraph": 245,
+      "endParagraphExclusive": 481,
+      "paragraphs": 236,
+      "tables": 4,
+      "characters": 6499
+    },
+    {
+      "number": 2,
+      "slug": "adhan-to-takbir",
+      "title": "আজান থেকে তাকবির — অন্তরকে নামাজের জন্য প্রস্তুত করা",
+      "titleEn": "From adhan to takbir: preparing the heart",
+      "startParagraph": 481,
+      "endParagraphExclusive": 711,
+      "paragraphs": 230,
+      "tables": 7,
+      "characters": 6235
+    },
+    {
+      "number": 3,
+      "slug": "wudu",
+      "title": "অজু — আল্লাহর সামনে দাঁড়ানোর প্রস্তুতি",
+      "titleEn": "Wudu: preparing to stand before Allah",
+      "startParagraph": 711,
+      "endParagraphExclusive": 932,
+      "paragraphs": 221,
+      "tables": 2,
+      "characters": 6861
+    },
+    {
+      "number": 4,
+      "slug": "journey-to-prayer",
+      "title": "মসজিদের পথে — অন্তরও যাক আল্লাহর দিকে",
+      "titleEn": "On the way to prayer",
+      "startParagraph": 932,
+      "endParagraphExclusive": 1120,
+      "paragraphs": 188,
+      "tables": 1,
+      "characters": 6383
+    },
+    {
+      "number": 5,
+      "slug": "opening-takbir",
+      "title": "তাকবিরে তাহরিমা",
+      "titleEn": "The opening takbir",
+      "startParagraph": 1120,
+      "endParagraphExclusive": 1334,
+      "paragraphs": 214,
+      "tables": 1,
+      "characters": 6601
+    },
+    {
+      "number": 6,
+      "slug": "thana",
+      "title": "সানা",
+      "titleEn": "Thana: the opening praise",
+      "startParagraph": 1334,
+      "endParagraphExclusive": 1581,
+      "paragraphs": 247,
+      "tables": 1,
+      "characters": 6210
+    },
+    {
+      "number": 8,
+      "slug": "bismillah",
+      "title": "বিসমিল্লাহ",
+      "titleEn": "Bismillah",
+      "startParagraph": 1581,
+      "endParagraphExclusive": 1757,
+      "paragraphs": 176,
+      "tables": 1,
+      "characters": 4664
+    },
+    {
+      "number": 9,
+      "slug": "al-fatihah",
+      "title": "সূরা আল-ফাতিহা: নামাজে আল্লাহর সঙ্গে কথা বলা",
+      "titleEn": "Al-Fatihah: speaking to Allah in prayer",
+      "startParagraph": 1757,
+      "endParagraphExclusive": 2093,
+      "paragraphs": 336,
+      "tables": 11,
+      "characters": 9363
+    },
+    {
+      "number": 10,
+      "slug": "ameen",
+      "title": "আমীন — দোয়া কবুলের আশা",
+      "titleEn": "Ameen: hoping for acceptance",
+      "startParagraph": 2093,
+      "endParagraphExclusive": 2243,
+      "paragraphs": 150,
+      "tables": 0,
+      "characters": 4882
+    },
+    {
+      "number": 12,
+      "slug": "ruku",
+      "title": "রুকু — মহান রবের সামনে নত হওয়া",
+      "titleEn": "Ruku: bowing before the Magnificent Lord",
+      "startParagraph": 2243,
+      "endParagraphExclusive": 2486,
+      "paragraphs": 243,
+      "tables": 1,
+      "characters": 6693
+    },
+    {
+      "number": 13,
+      "slug": "rising-from-ruku",
+      "title": "রুকু থেকে ওঠা",
+      "titleEn": "Rising from ruku",
+      "startParagraph": 2486,
+      "endParagraphExclusive": 2746,
+      "paragraphs": 260,
+      "tables": 2,
+      "characters": 6991
+    },
+    {
+      "number": 14,
+      "slug": "sujud",
+      "title": "সিজদা — সর্বোচ্চ রবের সামনে সমর্পণ",
+      "titleEn": "Sujud: surrender before the Most High",
+      "startParagraph": 2746,
+      "endParagraphExclusive": 3005,
+      "paragraphs": 259,
+      "tables": 2,
+      "characters": 7080
+    },
+    {
+      "number": 15,
+      "slug": "between-prostrations",
+      "title": "দুই সিজদার মাঝের বসা",
+      "titleEn": "Sitting between the two prostrations",
+      "startParagraph": 3005,
+      "endParagraphExclusive": 3285,
+      "paragraphs": 280,
+      "tables": 2,
+      "characters": 7205
+    },
+    {
+      "number": 16,
+      "slug": "second-prostration",
+      "title": "দ্বিতীয় সিজদা",
+      "titleEn": "The second prostration",
+      "startParagraph": 3285,
+      "endParagraphExclusive": 3506,
+      "paragraphs": 221,
+      "tables": 1,
+      "characters": 7345
+    },
+    {
+      "number": 17,
+      "slug": "tashahhud",
+      "title": "তাশাহহুদ",
+      "titleEn": "Tashahhud",
+      "startParagraph": 3506,
+      "endParagraphExclusive": 3826,
+      "paragraphs": 320,
+      "tables": 9,
+      "characters": 7955
+    },
+    {
+      "number": 18,
+      "slug": "durood-ibrahim",
+      "title": "দরূদে ইবরাহিম",
+      "titleEn": "Durood Ibrahim",
+      "startParagraph": 3826,
+      "endParagraphExclusive": 4093,
+      "paragraphs": 267,
+      "tables": 6,
+      "characters": 8663
+    },
+    {
+      "number": 19,
+      "slug": "dua-before-salam",
+      "title": "তাশাহহুদ ও দরূদের পরের দোয়া",
+      "titleEn": "Supplication after tashahhud and durood",
+      "startParagraph": 4093,
+      "endParagraphExclusive": 4421,
+      "paragraphs": 328,
+      "tables": 1,
+      "characters": 8519
+    },
+    {
+      "number": 20,
+      "slug": "salam",
+      "title": "সালাম ফেরানো: নামাজের সমাপ্তি, জীবনের শুরু",
+      "titleEn": "Salam: the end of prayer and the beginning of life",
+      "startParagraph": 4421,
+      "endParagraphExclusive": 4665,
+      "paragraphs": 244,
+      "tables": 1,
+      "characters": 8307
+    }
+  ]
+}

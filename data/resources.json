@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "title": "বেহেশতী জেওর — ভলিউম ১",
+    "titleBn": "বেহেশতী জেওর — ভলিউম ১",
+    "titleEn": "Beheshti Zewor — Volume 1",
+    "description": "আশরাফ আলী থানভী রচিত; বাংলা অনুবাদ শামছুল হক ফরিদপুরী। প্রথম ভলিউমের স্ক্যান ও OCR সংস্করণ।",
+    "descriptionBn": "আশরাফ আলী থানভী রচিত; বাংলা অনুবাদ শামছুল হক ফরিদপুরী। প্রথম ভলিউমের স্ক্যান ও OCR সংস্করণ।",
+    "descriptionEn": "Bengali translation of Ashraf Ali Thanwi’s work by Shamsul Haq Faridpuri. Scanned volume with OCR text.",
+    "language": "bn",
+    "pages": 343,
+    "bytes": 103878245,
+    "sha256": "1ec57aae60c7393ae18b5055e27a58475953bf1bb37a0696545126343229306b",
+    "url": "https://github.com/bashardatascience-hub/ilm-qalb-amal/releases/download/pdf-library-2026-10/beheshti-zewor-vol1.pdf"
+  },
+  {
+    "title": "বেহেশতী জেওর — ভলিউম ২",
+    "titleBn": "বেহেশতী জেওর — ভলিউম ২",
+    "titleEn": "Beheshti Zewor — Volume 2",
+    "description": "আশরাফ আলী থানভী রচিত; বাংলা অনুবাদ শামছুল হক ফরিদপুরী। দ্বিতীয় ভলিউমের স্ক্যান ও OCR সংস্করণ।",
+    "descriptionBn": "আশরাফ আলী থানভী রচিত; বাংলা অনুবাদ শামছুল হক ফরিদপুরী। দ্বিতীয় ভলিউমের স্ক্যান ও OCR সংস্করণ।",
+    "descriptionEn": "Bengali translation of Ashraf Ali Thanwi’s work by Shamsul Haq Faridpuri. Scanned volume with OCR text.",
+    "language": "bn",
+    "pages": 342,
+    "bytes": 12512534,
+    "sha256": "ce1ebd79bdfbb905f1619dab6b67e2b6a6640c20caa95c21dd1667189a9ba351",
+    "url": "https://github.com/bashardatascience-hub/ilm-qalb-amal/releases/download/pdf-library-2026-10/beheshti-zewor-vol2.pdf"
+  },
+  {
+    "title": "বেহেশতী জেওর — ভলিউম ৩",
+    "titleBn": "বেহেশতী জেওর — ভলিউম ৩",
+    "titleEn": "Beheshti Zewor — Volume 3",
+    "description": "আশরাফ আলী থানভী রচিত; বাংলা অনুবাদ শামছুল হক ফরিদপুরী। তৃতীয় ভলিউমের স্ক্যান সংস্করণ।",
+    "descriptionBn": "আশরাফ আলী থানভী রচিত; বাংলা অনুবাদ শামছুল হক ফরিদপুরী। তৃতীয় ভলিউমের স্ক্যান সংস্করণ।",
+    "descriptionEn": "Bengali translation of Ashraf Ali Thanwi’s work by Shamsul Haq Faridpuri. Scanned third volume.",
+    "language": "bn",
+    "pages": 245,
+    "bytes": 8645340,
+    "sha256": "bd9b8a2e8841fcf0e5e56a3577b70de2f312ce270655f1c06146609c9263ee53",
+    "url": "https://github.com/bashardatascience-hub/ilm-qalb-amal/releases/download/pdf-library-2026-10/beheshti-zewor-vol3.pdf"
+  },
+  {
+    "title": "দৈনন্দিন যিকির — Daily Adhkar",
+    "titleBn": "দৈনন্দিন যিকির — Daily Adhkar",
+    "titleEn": "Daily Adhkar",
+    "description": "Life With Allah-এর আরবি যিকির ও দুআর ইংরেজি অর্থ ও নির্দেশনাসহ সংকলন।",
+    "descriptionBn": "Life With Allah-এর আরবি যিকির ও দুআর ইংরেজি অর্থ ও নির্দেশনাসহ সংকলন।",
+    "descriptionEn": "Life With Allah’s collection of Arabic remembrances and supplications with English meanings and guidance.",
+    "language": "en",
+    "pages": 142,
+    "bytes": 3920551,
+    "sha256": "602b972e8e8db22fef53b89343f29b73bf45485befc78918e135f78cf86c8702",
+    "url": "https://github.com/bashardatascience-hub/ilm-qalb-amal/releases/download/pdf-library-2026-10/daily-adhkar.pdf"
+  },
+  {
+    "title": "সকাল-সন্ধ্যার দুআ ও যিকর",
+    "titleBn": "সকাল-সন্ধ্যার দুআ ও যিকর",
+    "titleEn": "Morning and Evening Dua and Dhikr",
+    "description": "সকাল ও সন্ধ্যায় পড়ার দুআ ও যিকিরের বাংলা পুস্তিকা।",
+    "descriptionBn": "সকাল ও সন্ধ্যায় পড়ার দুআ ও যিকিরের বাংলা পুস্তিকা।",
+    "descriptionEn": "A Bengali booklet of supplications and remembrances for morning and evening.",
+    "language": "bn",
+    "pages": 34,
+    "bytes": 12126066,
+    "sha256": "cda565194f82b77890dfd3cac55ea75a4f9f165fd83b6a69605fa84a438ca461",
+    "url": "https://github.com/bashardatascience-hub/ilm-qalb-amal/releases/download/pdf-library-2026-10/morning-evening-dua-dhikr-bn.pdf"
+  },
+  {
+    "title": "হিসনুল মুসলিম — দুআ ও যিকির",
+    "titleBn": "হিসনুল মুসলিম — দুআ ও যিকির",
+    "titleEn": "Hisnul Muslim — Dua and Dhikr",
+    "description": "সাঈদ ইবন আলী ইবন ওয়াহফ আল-কাহতানী রচিত। বাংলা অনুবাদ ও সম্পাদনা: আবু বকর মুহাম্মাদ যাকারিয়া।",
+    "descriptionBn": "সাঈদ ইবন আলী ইবন ওয়াহফ আল-কাহতানী রচিত। বাংলা অনুবাদ ও সম্পাদনা: আবু বকর মুহাম্মাদ যাকারিয়া।",
+    "descriptionEn": "By Saeed ibn Ali ibn Wahf al-Qahtani. Bengali translation and editing by Abu Bakr Muhammad Zakaria.",
+    "language": "bn",
+    "pages": 219,
+    "bytes": 1988055,
+    "sha256": "2fc9180652520cbe6867c880ff2c6b43263c51c0ddb1f6c360a02d52a9b16ead",
+    "url": "https://github.com/bashardatascience-hub/ilm-qalb-amal/releases/download/pdf-library-2026-10/hisnul-muslim-bn.pdf"
+  }
+]

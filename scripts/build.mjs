@@ -60,8 +60,162 @@ async function page(l,route,title,description,body,kind) {
   pages.push({l,route,title,description});
 }
 function heading(l,eyebrow,title,desc) {return `<div class="page-heading wrap"><p class="eyebrow">${eyebrow}</p><h1>${title}</h1><p class="lead">${desc}</p></div>`;}
+const learningVideos = [
+  {
+    "position": 1,
+    "title": "ক্লাস - ১ , ব্যাচ -৮   I কোর্স পরিচিতি",
+    "url": "https://www.youtube.com/watch?v=LBSZcWGaiSg&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=1"
+  },
+  {
+    "position": 2,
+    "title": "ক্লাস - ২ , ব্যাচ -৮ | ইসমের পরিচিতি",
+    "url": "https://www.youtube.com/watch?v=0NrSZTT9d-4&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=2"
+  },
+  {
+    "position": 3,
+    "title": "ক্লাস - ৩ , ব্যাচ -৮ ।  ইসমের পুরুষবাচক বহুবচন  ও স্ত্রীবাচক একবচন গঠন",
+    "url": "https://www.youtube.com/watch?v=YzlUq6YHXIU&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=3"
+  },
+  {
+    "position": 4,
+    "title": "ক্লাস -৪ , ব্যাচ ৮।  আংশিক মুসলিমুন চার্ট",
+    "url": "https://www.youtube.com/watch?v=mmXj3tudhZ0&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=4"
+  },
+  {
+    "position": 5,
+    "title": "ক্লাস -৫ , ব্যাচ ৮।  সর্বনাম (রফা স্টেটাস )",
+    "url": "https://www.youtube.com/watch?v=KM3bIzxh4HQ&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=5"
+  },
+  {
+    "position": 6,
+    "title": "ক্লাস - ৬ , ব্যাচ - ৮।  সর্বনাম (নাসব ও জার স্টেটাস )",
+    "url": "https://www.youtube.com/watch?v=rb4CfVnH6D4&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=6"
+  },
+  {
+    "position": 7,
+    "title": "Class 7, Batch 8 | হারফুন নাসব | হারফে জার",
+    "url": "https://www.youtube.com/watch?v=zyWFzqGhiAk&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=7"
+  },
+  {
+    "position": 8,
+    "title": "Class 8 Batch 8 | মুদফ ও মুদফ ইলাইহি",
+    "url": "https://www.youtube.com/watch?v=sPgJHxiqkKY&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=8"
+  },
+  {
+    "position": 9,
+    "title": "Class 9, Batch 8",
+    "url": "https://www.youtube.com/watch?v=sgonSEjheis&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=9"
+  },
+  {
+    "position": 10,
+    "title": "Class 10, Batch 8 | মাউসুফ সিফাহ",
+    "url": "https://www.youtube.com/watch?v=u7xOCLPv5Ds&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=10"
+  },
+  {
+    "position": 11,
+    "title": "কিভাবে Quranic Vocabulary ওয়েবসাইটটি ব্যবহার করবেন",
+    "url": "https://www.youtube.com/watch?v=ZcM_m6SBPTM&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=11"
+  },
+  {
+    "position": 12,
+    "title": "Class 11, Batch 8 | ইসমুল ইশারা এবং মুশারুন ইলাইহি | বিশেষ মুদফ ও মুদফ ইলাইহি",
+    "url": "https://www.youtube.com/watch?v=K13QomxXzpI&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=12"
+  },
+  {
+    "position": 13,
+    "title": "Class 12 Batch 8 | বাক্যাংশ রিভিউ  | নামমাত্র বাক্য গঠন",
+    "url": "https://www.youtube.com/watch?v=_y2rOkWS4_4&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=13"
+  },
+  {
+    "position": 14,
+    "title": "Class 13, Batch 8 | নামমাত্র বাক্য গঠন",
+    "url": "https://www.youtube.com/watch?v=aONeJlKf5P0&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=14"
+  },
+  {
+    "position": 15,
+    "title": "Class 14 Batch 8 I ক্রিয়া/ফি'লের পরিচিতি",
+    "url": "https://www.youtube.com/watch?v=Tw5HEKPoVTM&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=15"
+  },
+  {
+    "position": 16,
+    "title": "Class 15, Batch 8 | নামমাত্র বাক্য গঠন রিভিউ",
+    "url": "https://www.youtube.com/watch?v=ISp8_Zgw1p0&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=16"
+  },
+  {
+    "position": 17,
+    "title": "class 16  batch 8 |",
+    "url": "https://www.youtube.com/watch?v=GXgHQ26HEhE&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=17"
+  },
+  {
+    "position": 18,
+    "title": "Class 17, Batch 8  | ছারফ/Sarf পরিচিতি",
+    "url": "https://www.youtube.com/watch?v=dANJBvyeT_4&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=18"
+  },
+  {
+    "position": 19,
+    "title": "Class 18, Batch 8 |  অতীতকাল/Perfect Tense | ফ্যামিলি",
+    "url": "https://www.youtube.com/watch?v=0SedMhaZJQw&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=19"
+  },
+  {
+    "position": 20,
+    "title": "Class 19, Batch 8 |  অতীত কালের ফি'ল অনুশীলন",
+    "url": "https://www.youtube.com/watch?v=m6q6RGY3YmA&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=20"
+  },
+  {
+    "position": 21,
+    "title": "Class 20, Batch 8 |  বর্তমান কাল/Imperfect Tense",
+    "url": "https://www.youtube.com/watch?v=-FJuuodi9LU&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=21"
+  },
+  {
+    "position": 22,
+    "title": "Class 21, Batch 8  |  অতীত ও বর্তমান  কালের ফি'ল অনুশীলন",
+    "url": "https://www.youtube.com/watch?v=wmYAndYcoOw&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=22"
+  },
+  {
+    "position": 23,
+    "title": "Class 22, Batch 8 |  অতীত ও বর্তমান  কালের ফি'ল অনুশীলন",
+    "url": "https://www.youtube.com/watch?v=Y9DA1awU8ig&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=23"
+  },
+  {
+    "position": 24,
+    "title": "Class 23,  Batch 8 | লাইট ও লাইটেস্ট ফর্মের ফি'ল",
+    "url": "https://www.youtube.com/watch?v=Pl35qAXOnJ0&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=24"
+  },
+  {
+    "position": 25,
+    "title": "Class 24, Batch 8 | লাইট ও লাইটেস্ট ফর্মের ফি'ল",
+    "url": "https://www.youtube.com/watch?v=oYrMVglW0xc&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=25"
+  },
+  {
+    "position": 26,
+    "title": "Class 25, Batch 8 | ফি'লের নাহি ফর্ম |  না-বোধক বাক্য",
+    "url": "https://www.youtube.com/watch?v=4rdlSshSMZM&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=26"
+  },
+  {
+    "position": 27,
+    "title": "Class 26, Batch 8 | ফি'লের আমর ফর্ম",
+    "url": "https://www.youtube.com/watch?v=odaFR9s1BZM&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=27"
+  },
+  {
+    "position": 28,
+    "title": "Class 27, Batch 8 | রিভিউ ক্লাস",
+    "url": "https://www.youtube.com/watch?v=QMrJLsUBvzE&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=28"
+  },
+  {
+    "position": 29,
+    "title": "Class 28, Batch 8 | ___ إِنْ ___ إِلَّا | مَا ___ إِلَّا",
+    "url": "https://www.youtube.com/watch?v=jDVkoxg_fNU&list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&index=29"
+  }
+];
+const learningPlaylist = 'https://www.youtube.com/playlist?list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA';
+function videoGuideLink(l) {
+  return `<div class="inline-callout"><h2>${choose(l,'ভিডিও দেখে আরবি শিখুন','Learn Arabic with video lessons')}</h2><p>${choose(l,'Quranic Arabic Learning Café-এর ৮ম ব্যাচের বাংলা ভিডিওগুলো ধারাবাহিকভাবে দেখুন।','Follow the Bengali video lessons from Quranic Arabic Learning Café’s Batch 8 playlist.')}</p><a class="text-link" href="${url(`${l}/subjects/grammar/`)}#learning-videos">${choose(l,'ভিডিও পাঠের তালিকা দেখুন','Browse the video lessons')} ${arrow}</a></div>`;
+}
+function learningVideoLinks(l) {
+  return `<div id="learning-videos"><p class="eyebrow">${choose(l,'বাংলা ভিডিও পাঠ','BENGALI VIDEO LESSONS')}</p><h2>${choose(l,'৮ম ব্যাচ — কুরআনিক আরবি','Batch 8 — Quranic Arabic')}</h2><p>${choose(l,'Quranic Arabic Learning Café-এর প্লেলিস্ট থেকে ২৮টি ক্লাস ও শব্দভান্ডার ওয়েবসাইট ব্যবহারের একটি ভিডিও। প্লেলিস্টের ক্রম ও মূল শিরোনাম রাখা হয়েছে।','28 classes and a vocabulary-website tutorial from Quranic Arabic Learning Café. The recordings are in Bengali; original titles and playlist order are retained.')}</p><p><a href="https://www.youtube.com/@quranicarabiclearningcafe">Quranic Arabic Learning Café</a> · <a href="${learningPlaylist}">${choose(l,'সম্পূর্ণ প্লেলিস্ট খুলুন','Open the full playlist')} ${arrow}</a></p><ol class="series-list">${learningVideos.map(v=>`<li><span>${String(v.position).padStart(2,'0')}</span><a href="${esc(v.url)}" lang="bn" dir="auto">${esc(v.title)} ${arrow}</a><small>YouTube</small></li>`).join('')}</ol><p class="external-note">${choose(l,'ভিডিওগুলো YouTube-এ খুলবে। তালিকাটি ১৮ অক্টোবর ২০২৬-এ যাচাই করা হয়েছে; নতুন ভিডিওর জন্য মূল প্লেলিস্ট দেখুন।','Videos open on YouTube. This list was checked on 18 October 2026; visit the original playlist for later additions.')}</p></div>`;
+}
 function vocabularyTools(l) {
-  return `<div class="inline-callout"><p class="eyebrow">${choose(l,'বাইরের শেখার উপকরণ','EXTERNAL LEARNING TOOLS')}</p><h2>Quranic Vocabulary</h2><p>${choose(l,'আরবি শব্দের বাংলা ও ইংরেজি অর্থ শিখতে Quranic Vocabulary-এর ফ্ল্যাশকার্ড ব্যবহার করুন। শেখা শব্দগুলো কুইজের মাধ্যমে অনুশীলন করুন।','Use Quranic Vocabulary’s flashcards to study Arabic words with Bengali and English meanings, then practise with its quizzes.')}</p><div class="hero-buttons"><a class="button" href="https://quranicvocabulary.com/flashcards/">${choose(l,'ফ্ল্যাশকার্ডে শিখুন','Study flashcards')} ${arrow}</a><a class="outline-button" href="https://quranicvocabulary.com/quiz/">${choose(l,'কুইজে অনুশীলন করুন','Practise with quizzes')} ${arrow}</a></div><p class="external-note">${choose(l,'লিংকগুলো একটি আলাদা ওয়েবসাইটে নিয়ে যাবে। সেখানে নিবন্ধন বা লগইন এবং সক্রিয় সাবস্ক্রিপশন প্রয়োজন হতে পারে।','These links open a separate website. Registration or sign-in and an active subscription may be required.')}</p><a class="text-link" href="https://quranicvocabulary.com/">${choose(l,'Quranic Vocabulary সম্পর্কে জানুন','About Quranic Vocabulary')} ${arrow}</a></div>`;
+  return `<div class="inline-callout"><p class="eyebrow">${choose(l,'বাইরের শেখার উপকরণ','EXTERNAL LEARNING TOOLS')}</p><h2>Quranic Vocabulary</h2><p>${choose(l,'আরবি শব্দের বাংলা ও ইংরেজি অর্থ শিখতে Quranic Vocabulary-এর ফ্ল্যাশকার্ড ব্যবহার করুন। শেখা শব্দগুলো কুইজের মাধ্যমে অনুশীলন করুন।','Use Quranic Vocabulary’s flashcards to study Arabic words with Bengali and English meanings, then practise with its quizzes.')}</p><div class="hero-buttons"><a class="button" href="https://quranicvocabulary.com/flashcards/">${choose(l,'ফ্ল্যাশকার্ডে শিখুন','Study flashcards')} ${arrow}</a><a class="outline-button" href="https://quranicvocabulary.com/quiz/">${choose(l,'কুইজে অনুশীলন করুন','Practise with quizzes')} ${arrow}</a></div><p class="external-note">${choose(l,'লিংকগুলো একটি আলাদা ওয়েবসাইটে নিয়ে যাবে। সেখানে নিবন্ধন বা লগইন এবং সক্রিয় সাবস্ক্রিপশন প্রয়োজন হতে পারে।','These links open a separate website. Registration or sign-in and an active subscription may be required.')}</p><a class="text-link" href="https://quranicvocabulary.com/">${choose(l,'Quranic Vocabulary সম্পর্কে জানুন','About Quranic Vocabulary')} ${arrow}</a><p><a class="text-link" href="https://www.youtube.com/watch?v=ZcM_m6SBPTM&amp;list=PLKX6RwLbgFxJrpx1xyJ6-myoD2TV0nURA&amp;index=11">${choose(l,'ওয়েবসাইট ব্যবহারের ভিডিও দেখুন','Watch the website tutorial (Bengali)')} ${arrow}</a></p></div>`;
 }
 function subjectCards(l,filter=()=>true) {return `<div class="subject-grid">${subjects.filter(filter).map((s,i)=>`<a class="subject-card" href="${url(`${l}/subjects/${s.slug}/`)}"><span class="card-number">${String(i+1).padStart(2,'0')}</span><h3>${s[l]}</h3><p>${s[`${l}Description`]}</p><span class="card-arrow">${arrow}</span></a>`).join('')}</div>`;}
 function lessonCard(l,x) {return `<a class="lesson-card" href="${url(`${l}/${x.route}`)}"><div class="lesson-card-meta"><span>${words[l].series}</span><span>${x.translationPending?'Bengali original available':`${x.minutes} ${choose(l,'মিনিট','min')}`}</span></div><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p><span class="text-link">${x.translationPending?'View Bengali lesson':words[l].read} ${arrow}</span></a>`;}
@@ -91,9 +245,9 @@ for(const l of ['bn','en']) {
   await page(l,'start/',w.start,choose(l,'ধীরে পড়া ও ভাবনার মাধ্যমে শেখা শুরু করুন।','A simple guide to beginning your learning journey.'),heading(l,'ILM · QALB · AMAL',choose(l,'একটি ছোট পাঠ দিয়ে শুরু হোক।','Begin with one small lesson.'),choose(l,'সব একসঙ্গে শেখার প্রয়োজন নেই। একটু পড়ুন, একটু ভাবুন, তারপর অনুশীলন করুন।','You do not need to learn everything at once. Read a little, reflect, then practise.'))+`<div class="wrap content-grid"><article class="prose"><h2>${choose(l,'পড়ার একটি সহজ পদ্ধতি','A simple reading practice')}</h2><ol><li>${choose(l,'মনোযোগ দিয়ে পড়ার জন্য অল্প সময় রাখুন।','Set aside a little time to read attentively.')}</li><li>${choose(l,'আরবি পাঠ, শব্দের অর্থ ও ব্যাখ্যা আলাদাভাবে দেখুন।','Look at the Arabic, word meanings and explanation separately.')}</li><li>${choose(l,'আত্মজিজ্ঞাসার উত্তর নিজের খাতায় লিখুন।','Write your responses to the reflection questions in a notebook.')}</li><li>${choose(l,'দিনের জন্য একটি ছোট অনুশীলন বেছে নিন।','Choose one small practice for your day.')}</li></ol><h2>${choose(l,'শেখার তিনটি পথ','Three paths to explore')}</h2><p>${choose(l,'কুরআন ও তাফসীর, অন্তর ও আমল, এবং আরবি শেখা—বিভাগগুলোতে বিষয়ভিত্তিক পাঠ সাজানো থাকবে। প্রথম ধারাবাহিক হিসেবে নামাজ নিয়ে পড়া শুরু করতে পারেন।','Explore Quran & Tafsir, Heart & Practice, and Arabic Learning. Start with the introduction to our prayer series.')}</p><h2>${choose(l,'সূত্র ও ব্যক্তিগত উপলব্ধি','Sources and personal reflection')}</h2><p>${choose(l,'অনুবাদ ও উদ্ধৃত ব্যাখ্যার সূত্র পাঠের সঙ্গে থাকবে। লেখকের ব্যক্তিগত উপলব্ধি আলাদা পরিচয়ে দেখানো হবে। নামাজের ধারাবাহিকে মূল পাণ্ডুলিপির ভূমিকা ও ১৮টি পাঠ পড়তে পারবেন।','Translations and quoted explanations will identify their sources. The author’s personal reflections will be distinguished from those sources. The prayer series now includes the manuscript introduction and 18 full lessons in Bengali. English translations are not yet available.')}</p></article><aside class="aside-card"><span class="pill">${choose(l,'প্রথম পাঠ','FIRST LESSON')}</span><h2>${w.intro}</h2><p>${choose(l,'পড়ার পদ্ধতি ও নিজের শেখার নোট তৈরি করুন।','Set up your reading practice and a notebook for reflection.')}</p><a class="button" href="${url(`${l}/lessons/introduction/`)}">${w.read} →</a></aside></div>`);
 
   for(const [group,title,desc] of [['quran',w.quran,choose(l,'আরবি পাঠ, অর্থ, ব্যাখ্যা এবং সূরাভিত্তিক অধ্যয়ন।','Reading, meaning, explanation and surah studies.')],['heart',w.heart,choose(l,'শেখা বিষয় অন্তরে ধারণ করা ও জীবনে অনুশীলন।','Connect understanding, reflection and everyday practice.')],['arabic',w.arabic,choose(l,'কুরআনের ভাষার সঙ্গে ধাপে ধাপে পরিচয়।','Get to know the language of the Quran, step by step.')]]) {
-    await page(l,`${group}/`,title,desc,heading(l,choose(l,'পাঠের বিভাগ','THE COLLECTION'),title,desc)+`<section class="wrap section compact">${subjectCards(l,s=>s.group===group)}${group==='heart'?`<div class="inline-callout"><h2>${w.series}</h2><a class="text-link" href="${url(`${l}/series/praying-from-the-heart/`)}">${choose(l,'ধারাবাহিকের পাঠসূচি','See the series outline')} ${arrow}</a></div>`:''}${group==='quran'?`<div class="inline-callout"><h2>${choose(l,'কুরআন পড়ুন ও শুনুন','Read and listen to the Quran')}</h2><p>${choose(l,'আরবি পাঠ, অনুবাদ ও তিলাওয়াতের জন্য Quran.com ব্যবহার করুন।','Visit Quran.com for Arabic text, translations and recitation.')}</p><a class="text-link" href="https://quran.com/">Quran.com ${arrow}</a></div>`:''}</section>`);
+    await page(l,`${group}/`,title,desc,heading(l,choose(l,'পাঠের বিভাগ','THE COLLECTION'),title,desc)+`<section class="wrap section compact">${subjectCards(l,s=>s.group===group)}${group==='arabic'?videoGuideLink(l):''}${group==='heart'?`<div class="inline-callout"><h2>${w.series}</h2><a class="text-link" href="${url(`${l}/series/praying-from-the-heart/`)}">${choose(l,'ধারাবাহিকের পাঠসূচি','See the series outline')} ${arrow}</a></div>`:''}${group==='quran'?`<div class="inline-callout"><h2>${choose(l,'কুরআন পড়ুন ও শুনুন','Read and listen to the Quran')}</h2><p>${choose(l,'আরবি পাঠ, অনুবাদ ও তিলাওয়াতের জন্য Quran.com ব্যবহার করুন।','Visit Quran.com for Arabic text, translations and recitation.')}</p><a class="text-link" href="https://quran.com/">Quran.com ${arrow}</a></div>`:''}</section>`);
   }
-  for(const s of subjects){const matching=lessons[l].filter(x=>x.subject===s.slug);await page(l,`subjects/${s.slug}/`,s[l],s[`${l}Description`],heading(l,choose(l,'বিষয়ভিত্তিক পাঠ','SUBJECT GUIDE'),s[l],s[`${l}Description`])+`<section class="wrap section compact">${s.slug==='vocabulary'?vocabularyTools(l):matching.length?matching.map(x=>lessonCard(l,x)).join(''):`<div class="empty-state"><span aria-hidden="true">✦</span><h2>${w.preparing}</h2><p>${choose(l,'এই বিষয়ের পূর্ণ পাঠ এখনো প্রকাশিত হয়নি। এর মধ্যে পড়ার পদ্ধতি নিয়ে পরিচিতি পাঠটি পড়তে পারেন।','Complete lessons on this subject have not been published yet. In the meantime, explore the introduction to our reading method.')}</p><a class="text-link" href="${url(`${l}/lessons/introduction/`)}">${w.intro} ${arrow}</a></div>`}${s.slug==='quran'?`<p class="external-note"><a href="https://quran.com/">${choose(l,'Quran.com-এ কুরআন পড়ুন ও শুনুন','Read and listen at Quran.com')} ${arrow}</a></p>`:''}${s.slug==='prayer'?`<p><a class="text-link" href="${url(`${l}/series/praying-from-the-heart/`)}">${choose(l,'সম্পূর্ণ প্রস্তাবিত পাঠসূচি','View the proposed series outline')} ${arrow}</a></p>`:''}</section>`);}
+  for(const s of subjects){const matching=lessons[l].filter(x=>x.subject===s.slug);await page(l,`subjects/${s.slug}/`,s[l],s[`${l}Description`],heading(l,choose(l,'বিষয়ভিত্তিক পাঠ','SUBJECT GUIDE'),s[l],s[`${l}Description`])+`<section class="wrap section compact">${s.slug==='grammar'?learningVideoLinks(l):s.slug==='vocabulary'?vocabularyTools(l):matching.length?matching.map(x=>lessonCard(l,x)).join(''):`<div class="empty-state"><span aria-hidden="true">✦</span><h2>${w.preparing}</h2><p>${choose(l,'এই বিষয়ের পূর্ণ পাঠ এখনো প্রকাশিত হয়নি। এর মধ্যে পড়ার পদ্ধতি নিয়ে পরিচিতি পাঠটি পড়তে পারেন।','Complete lessons on this subject have not been published yet. In the meantime, explore the introduction to our reading method.')}</p><a class="text-link" href="${url(`${l}/lessons/introduction/`)}">${w.intro} ${arrow}</a></div>`}${s.slug==='quran'?`<p class="external-note"><a href="https://quran.com/">${choose(l,'Quran.com-এ কুরআন পড়ুন ও শুনুন','Read and listen at Quran.com')} ${arrow}</a></p>`:''}${s.slug==='prayer'?`<p><a class="text-link" href="${url(`${l}/series/praying-from-the-heart/`)}">${choose(l,'সম্পূর্ণ প্রস্তাবিত পাঠসূচি','View the proposed series outline')} ${arrow}</a></p>`:''}</section>`);}
   await page(l,'series/praying-from-the-heart/',w.series,choose(l,'পরিচিতি, পড়ার পদ্ধতি ও প্রস্তাবিত পাঠসূচি।','Introduction, reading practice and proposed lesson outline.'),heading(l,choose(l,'ধারাবাহিক · ০১','SERIES · 01'),w.series,choose(l,'নামাজের শব্দ ও অর্থ নিয়ে ধীরে পড়া, ভাবা ও অনুশীলনের একটি যাত্রা।','A journey through the words and meanings of prayer, with room to read, reflect and practise.'))+`<section class="wrap section compact"><p class="collection-note">${choose(l,'মূল পাণ্ডুলিপির ভূমিকা ও ১৮টি পাঠ এখানে সাজানো হয়েছে। পাণ্ডুলিপিতে ৭ ও ১১ নম্বরের পৃথক পাঠ নেই; মূল নম্বর অক্ষুণ্ণ রাখা হয়েছে। অজুর অধ্যায়টি ২ ও ৪ নম্বর পাঠের মাঝের স্বতন্ত্র অংশ।','Read the introduction and 18 full Bengali lessons from the source manuscript. Separate lessons 7 and 11 are absent; the original numbering is retained. English titles below link to Bengali originals. The wudu chapter is the standalone section between lessons 2 and 4.')}</p>${seriesList(l)}</section>`);
 
   await page(l,'library/',w.library,choose(l,'বই, পাঠের নোট ও অনুশীলনপত্রের সংগ্রহ।','A collection of books, lesson notes and worksheets.'),heading(l,choose(l,'পাঠের সঙ্গী','THE READING SHELF'),w.library,choose(l,'শেখার উপকরণ এক জায়গায়, বিষয় ও ভাষা অনুযায়ী।','Learning resources in one place, organised by subject and language.'))+`<section class="wrap section compact">${resources.filter(r=>r.language===l||r.language==='both').length?resources.filter(r=>r.language===l||r.language==='both').map(r=>`<a class="lesson-card" href="${esc(r.url)}"><h2>${esc(r.title)}</h2><p>${esc(r.description)}</p><span class="text-link">${choose(l,'PDF খুলুন','Open PDF')} ${arrow}</span></a>`).join(''):`<div class="empty-state"><span aria-hidden="true">▤</span><h2>${choose(l,'লাইব্রেরি প্রস্তুত হচ্ছে','The library is taking shape')}</h2><p>${choose(l,'এখনো কোনো PDF যুক্ত হয়নি। বই, পাঠের নোট ও অনুশীলনপত্র প্রস্তুত হলে নাম, পরিচয় ও ডাউনলোড লিংক এখানে পাওয়া যাবে।','No PDFs have been added yet. Books, lesson notes and worksheets will appear here with descriptions and download links when they are ready.')}</p><a class="text-link" href="${url(`${l}/start/`)}">${choose(l,'এর মধ্যে পড়া শুরু করুন','Begin reading in the meantime')} ${arrow}</a></div>`}</section>`);
